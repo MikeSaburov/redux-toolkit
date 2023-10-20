@@ -4,7 +4,7 @@ import { LastName } from './LastName';
 
 export const ReduxStateChange = () => {
   return (
-    <div className="stateChange">
+    <div className="blockOne">
       <h3>Redux Toolkit State Change</h3>
       <input type="text" placeholder="Имя..." />
       <input type="text" placeholder="Фамилия..." />
