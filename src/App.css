@@ -51,3 +51,23 @@ button {
   height: 30px;
   font-size: 16px;
 }
+
+.todoItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.complite {
+  background: orange;
+  padding: 5px 10px;
+  text-align: center;
+}
+.item {
+  border: 1px solid black;
+  width: 220px;
+}
+.delete {
+  background: red;
+  padding: 5px 10px;
+}
