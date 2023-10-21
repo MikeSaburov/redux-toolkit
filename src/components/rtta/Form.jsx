@@ -12,7 +12,7 @@ export const Form = () => {
     const todo = {
       id: v4(),
       text: todoValue,
-      complited: false,
+      completed: false,
     };
 
     dispatch(addTodo(todo));

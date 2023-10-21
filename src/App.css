@@ -71,3 +71,7 @@ button {
   background: red;
   padding: 5px 10px;
 }
+
+.item_completed {
+  text-decoration: line-through;
+}
