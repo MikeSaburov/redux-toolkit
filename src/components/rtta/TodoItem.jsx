@@ -1,11 +1,15 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { toggleCompletedTodo } from '../../features/todo/todoSlice';
+import { toggleCompletedTodo, removeTodo } from '../../features/todo/todoSlice';
 
 export const TodoItem = ({ todo }) => {
   const dispatch = useDispatch();
   const toggleTodoHandler = (id) => {
     dispatch(toggleCompletedTodo(id));
+  };
+
+  const removeTodoItem = (id) => {
+    dispatch(removeTodo(id));
   };
 
   return (
@@ -16,7 +20,9 @@ export const TodoItem = ({ todo }) => {
       <div className={`item ${todo.completed ? 'item_completed' : ''}`}>
         {todo.text}
       </div>
-      <div className="delete">Delete</div>
+      <div className="delete" onClick={() => removeTodoItem(todo.id)}>
+        Удалить
+      </div>
     </div>
   );
 };
